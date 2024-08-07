@@ -16,7 +16,7 @@ public:
             }else if(nums[mid] < target){
                 left = mid + 1;
             } else if(nums[mid] > target){
-                right = right - 1;
+                right = mid - 1;
             }
             std::cout << "endOfLoop  " << "| Left: " << left << " | Mid: " << mid << " | Right: " << right << " |" << std::endl;
         }
