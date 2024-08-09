@@ -12,7 +12,7 @@ void producer(int n){
     for(int i = 0; i < n; ++i){
         int data= i + 1; // simulation of data
     {
-        std::unique_lock<std::mutex> lock(mtx); // lock the mutex
+        std::unique_lock<std::mutex> lock(mtx); // lock the mut
         data_queue.push(data); // add data to queue
         std::cout << "Produced: " << data << std::endl;
     } // Mutex is automatically unlocked when lock goes out of scope
