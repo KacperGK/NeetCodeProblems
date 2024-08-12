@@ -67,6 +67,7 @@ public:
     }
 
 int main(){
+    // IF we would use std::list<int> then it would handle linking by itself so we would only need one constructor for class or nothing if it would be a short program just pass the values
     ListNode* node3 = new ListNode(3);
     ListNode* node2 = new ListNode(2, node3);
     ListNode* node1 = new ListNode(1, node2);
